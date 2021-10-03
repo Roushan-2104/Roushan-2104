@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-![gif](https://c.tenor.com/NOYF3f82b_gAAAAC/programmer.gif)
+![gif](https://fuertedevelopers.com/assets/img/aboutus.gif)
 
 <!--
 **Roushan-2104/Roushan-2104** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
