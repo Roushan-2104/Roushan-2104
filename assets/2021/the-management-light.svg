@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="380" viewBox="0 0 900 380" role="img" aria-labelledby="t d">
+<title id="t">The Management: A project-management app for small teams.</title>
+<desc id="d">Sign up with a profile photo, saved to Firebase Storage. Projects with a category, due date and assigned teammates. Public and private projects, filtered by all, mine or private. A comment thread on every project. A live list of who's online right now.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#effaf7"/><stop offset="1" stop-color="#ffffff"/></linearGradient>
+  <linearGradient id="ac" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="900" y2="0"><stop offset="0" stop-color="#0f766e"/><stop offset="1" stop-color="#16a34a"/></linearGradient>
+  <marker id="arr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+</defs>
+<style>
+  .eyebrow { font: 600 11.5px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; letter-spacing: .12em; fill: #0f766e; }
+  .title { font: 800 30px -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif; fill: #10201d; letter-spacing: -.01em; }
+  .sub { font: 400 14.5px -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif; fill: #4b635e; }
+  .feat { font: 400 13px -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif; fill: #10201d; }
+  .lane { font: 600 10px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; letter-spacing: .14em; fill: #4b635e; }
+  .chip { font: 500 11.5px -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif; fill: #0f3d38; }
+  .stack { font: 600 11px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #0f766e; }
+  .flow { stroke: #0f766e; stroke-width: 2; stroke-dasharray: 4 5; animation: flow 1.2s linear infinite; }
+  @keyframes flow { to { stroke-dashoffset: -18; } }
+  @media (prefers-reduced-motion: reduce) { .flow { animation: none; } }
+</style>
+<rect x="1" y="1" width="898" height="378" rx="18" fill="url(#bg)" stroke="#cfe7e2" stroke-width="1.5"/>
+<rect x="1" y="1" width="6" height="378" rx="3" fill="url(#ac)"/>
+<text x="36" y="48" class="eyebrow">DEC 2021 · TEAM APP</text>
+<text x="36" y="86" class="title">The Management</text>
+<text x="36" y="112" class="sub">A project-management app for small teams.</text>
+<circle cx="42" cy="144" r="3.5" fill="#16a34a"/><text x="54" y="148" class="feat">Sign up with a profile photo, saved to Firebase Storage</text>
+<circle cx="42" cy="170" r="3.5" fill="#16a34a"/><text x="54" y="174" class="feat">Projects with a category, due date and assigned teammates</text>
+<circle cx="42" cy="196" r="3.5" fill="#16a34a"/><text x="54" y="200" class="feat">Public and private projects, filtered by all, mine or private</text>
+<circle cx="42" cy="222" r="3.5" fill="#16a34a"/><text x="54" y="226" class="feat">A comment thread on every project</text>
+<circle cx="42" cy="248" r="3.5" fill="#16a34a"/><text x="54" y="252" class="feat">A live list of who's online right now</text>
+<rect x="36.0" y="328" width="67.3" height="24" rx="6" fill="#ffffff" stroke="#cfe7e2"/><text x="69.7" y="344" text-anchor="middle" class="stack">React 17</text>
+<rect x="111.3" y="328" width="101.4" height="24" rx="6" fill="#ffffff" stroke="#cfe7e2"/><text x="162.0" y="344" text-anchor="middle" class="stack">React Router 6</text>
+<rect x="220.7" y="328" width="78.7" height="24" rx="6" fill="#ffffff" stroke="#cfe7e2"/><text x="260.1" y="344" text-anchor="middle" class="stack">Firebase 9</text>
+<rect x="470" y="32" width="400" height="94" rx="12" fill="#f4fbf9" stroke="#cfe7e2"/>
+<text x="486" y="52" class="lane">SCREENS</text>
+<rect x="486.0" y="62" width="50.0" height="22" rx="11" fill="#e3f4f0" stroke="#b5ddd5"/><text x="511.0" y="77" text-anchor="middle" class="chip">Login</text>
+<rect x="543.0" y="62" width="60.3" height="22" rx="11" fill="#e3f4f0" stroke="#b5ddd5"/><text x="573.1" y="77" text-anchor="middle" class="chip">Sign up</text>
+<rect x="610.3" y="62" width="74.8" height="22" rx="11" fill="#e3f4f0" stroke="#b5ddd5"/><text x="647.7" y="77" text-anchor="middle" class="chip">Dashboard</text>
+<rect x="692.1" y="62" width="103.8" height="22" rx="11" fill="#e3f4f0" stroke="#b5ddd5"/><text x="744.0" y="77" text-anchor="middle" class="chip">Create project</text>
+<rect x="486.0" y="90" width="127.0" height="22" rx="11" fill="#e3f4f0" stroke="#b5ddd5"/><text x="549.5" y="105" text-anchor="middle" class="chip">Project + comments</text>
+<rect x="470" y="156" width="400" height="94" rx="12" fill="#f4fbf9" stroke="#cfe7e2"/>
+<text x="486" y="176" class="lane">LOGIC</text>
+<rect x="486.0" y="186" width="88.2" height="22" rx="11" fill="#e3f4f0" stroke="#b5ddd5"/><text x="530.1" y="201" text-anchor="middle" class="chip">AuthContext</text>
+<rect x="581.1" y="186" width="75.7" height="22" rx="11" fill="#e3f4f0" stroke="#b5ddd5"/><text x="619.0" y="201" text-anchor="middle" class="chip">useSignUp</text>
+<rect x="663.9" y="186" width="68.6" height="22" rx="11" fill="#e3f4f0" stroke="#b5ddd5"/><text x="698.2" y="201" text-anchor="middle" class="chip">useLogin</text>
+<rect x="739.5" y="186" width="75.7" height="22" rx="11" fill="#e3f4f0" stroke="#b5ddd5"/><text x="777.3" y="201" text-anchor="middle" class="chip">useLogOut</text>
+<rect x="486.0" y="214" width="99.7" height="22" rx="11" fill="#e3f4f0" stroke="#b5ddd5"/><text x="535.8" y="229" text-anchor="middle" class="chip">useCollection</text>
+<rect x="592.6" y="214" width="93.0" height="22" rx="11" fill="#e3f4f0" stroke="#b5ddd5"/><text x="639.1" y="229" text-anchor="middle" class="chip">react-select</text>
+<rect x="470" y="280" width="400" height="66" rx="12" fill="#f4fbf9" stroke="#cfe7e2"/>
+<text x="486" y="300" class="lane">FIREBASE</text>
+<rect x="486.0" y="310" width="43.8" height="22" rx="11" fill="#e3f4f0" stroke="#b5ddd5"/><text x="507.9" y="325" text-anchor="middle" class="chip">Auth</text>
+<rect x="536.8" y="310" width="143.6" height="22" rx="11" fill="#e3f4f0" stroke="#b5ddd5"/><text x="608.5" y="325" text-anchor="middle" class="chip">Firestore · real-time</text>
+<rect x="687.3" y="310" width="62.4" height="22" rx="11" fill="#e3f4f0" stroke="#b5ddd5"/><text x="718.5" y="325" text-anchor="middle" class="chip">Storage</text>
+<rect x="756.7" y="310" width="62.4" height="22" rx="11" fill="#e3f4f0" stroke="#b5ddd5"/><text x="787.9" y="325" text-anchor="middle" class="chip">Hosting</text>
+<line class="flow" x1="670.0" y1="129" x2="670.0" y2="151" marker-end="url(#arr)"/>
+<line class="flow" x1="670.0" y1="253" x2="670.0" y2="275" marker-end="url(#arr)"/>
+</svg>

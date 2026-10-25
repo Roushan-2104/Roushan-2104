@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="380" viewBox="0 0 900 380" role="img" aria-labelledby="t d">
+<title id="t">Cooking Ninja: A recipe book you can search and add to.</title>
+<desc id="d">Recipes stream in live from Firestore. Add recipes with ingredients, method, time and an image. Search recipes from the navbar. Delete a recipe straight from its card. Three accent colours and a dark mode.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#062321"/><stop offset="1" stop-color="#0b1211"/></linearGradient>
+  <linearGradient id="ac" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="900" y2="0"><stop offset="0" stop-color="#2dd4bf"/><stop offset="1" stop-color="#4ade80"/></linearGradient>
+  <marker id="arr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2dd4bf"/></marker>
+</defs>
+<style>
+  .eyebrow { font: 600 11.5px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; letter-spacing: .12em; fill: #2dd4bf; }
+  .title { font: 800 30px -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif; fill: #e6f4f1; letter-spacing: -.01em; }
+  .sub { font: 400 14.5px -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif; fill: #8fb3ac; }
+  .feat { font: 400 13px -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif; fill: #e6f4f1; }
+  .lane { font: 600 10px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; letter-spacing: .14em; fill: #8fb3ac; }
+  .chip { font: 500 11.5px -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif; fill: #d7f5ef; }
+  .stack { font: 600 11px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #2dd4bf; }
+  .flow { stroke: #2dd4bf; stroke-width: 2; stroke-dasharray: 4 5; animation: flow 1.2s linear infinite; }
+  @keyframes flow { to { stroke-dashoffset: -18; } }
+  @media (prefers-reduced-motion: reduce) { .flow { animation: none; } }
+</style>
+<rect x="1" y="1" width="898" height="378" rx="18" fill="url(#bg)" stroke="#174540" stroke-width="1.5"/>
+<rect x="1" y="1" width="6" height="378" rx="3" fill="url(#ac)"/>
+<text x="36" y="48" class="eyebrow">DEC 2021 · RECIPE APP</text>
+<text x="36" y="86" class="title">Cooking Ninja</text>
+<text x="36" y="112" class="sub">A recipe book you can search and add to.</text>
+<circle cx="42" cy="144" r="3.5" fill="#4ade80"/><text x="54" y="148" class="feat">Recipes stream in live from Firestore</text>
+<circle cx="42" cy="170" r="3.5" fill="#4ade80"/><text x="54" y="174" class="feat">Add recipes with ingredients, method, time and an image</text>
+<circle cx="42" cy="196" r="3.5" fill="#4ade80"/><text x="54" y="200" class="feat">Search recipes from the navbar</text>
+<circle cx="42" cy="222" r="3.5" fill="#4ade80"/><text x="54" y="226" class="feat">Delete a recipe straight from its card</text>
+<circle cx="42" cy="248" r="3.5" fill="#4ade80"/><text x="54" y="252" class="feat">Three accent colours and a dark mode</text>
+<rect x="36.0" y="328" width="67.3" height="24" rx="6" fill="#0b1211" stroke="#174540"/><text x="69.7" y="344" text-anchor="middle" class="stack">React 17</text>
+<rect x="111.3" y="328" width="101.4" height="24" rx="6" fill="#0b1211" stroke="#174540"/><text x="162.0" y="344" text-anchor="middle" class="stack">React Router 6</text>
+<rect x="220.7" y="328" width="78.7" height="24" rx="6" fill="#0b1211" stroke="#174540"/><text x="260.1" y="344" text-anchor="middle" class="stack">Firebase 9</text>
+<rect x="470" y="32" width="400" height="66" rx="12" fill="#0e2a27" stroke="#1d4d47"/>
+<text x="486" y="52" class="lane">SCREENS</text>
+<rect x="486.0" y="62" width="43.8" height="22" rx="11" fill="#123a36" stroke="#24605a"/><text x="507.9" y="77" text-anchor="middle" class="chip">Home</text>
+<rect x="536.8" y="62" width="56.2" height="22" rx="11" fill="#123a36" stroke="#24605a"/><text x="564.9" y="77" text-anchor="middle" class="chip">Recipe</text>
+<rect x="599.9" y="62" width="56.2" height="22" rx="11" fill="#123a36" stroke="#24605a"/><text x="628.0" y="77" text-anchor="middle" class="chip">Create</text>
+<rect x="663.1" y="62" width="56.2" height="22" rx="11" fill="#123a36" stroke="#24605a"/><text x="691.2" y="77" text-anchor="middle" class="chip">Search</text>
+<rect x="470" y="128" width="400" height="94" rx="12" fill="#0e2a27" stroke="#1d4d47"/>
+<text x="486" y="148" class="lane">LOGIC</text>
+<rect x="486.0" y="158" width="183.8" height="22" rx="11" fill="#123a36" stroke="#24605a"/><text x="577.9" y="173" text-anchor="middle" class="chip">ThemeContext · colour + mode</text>
+<rect x="676.8" y="158" width="68.6" height="22" rx="11" fill="#123a36" stroke="#24605a"/><text x="711.1" y="173" text-anchor="middle" class="chip">useTheme</text>
+<rect x="752.4" y="158" width="68.6" height="22" rx="11" fill="#123a36" stroke="#24605a"/><text x="786.7" y="173" text-anchor="middle" class="chip">useFetch</text>
+<rect x="486.0" y="186" width="92.3" height="22" rx="11" fill="#123a36" stroke="#24605a"/><text x="532.1" y="201" text-anchor="middle" class="chip">React Router</text>
+<rect x="470" y="252" width="400" height="66" rx="12" fill="#0e2a27" stroke="#1d4d47"/>
+<text x="486" y="272" class="lane">FIREBASE</text>
+<rect x="486.0" y="282" width="143.6" height="22" rx="11" fill="#123a36" stroke="#24605a"/><text x="557.8" y="297" text-anchor="middle" class="chip">Firestore · real-time</text>
+<line class="flow" x1="670.0" y1="101" x2="670.0" y2="123" marker-end="url(#arr)"/>
+<line class="flow" x1="670.0" y1="225" x2="670.0" y2="247" marker-end="url(#arr)"/>
+</svg>
