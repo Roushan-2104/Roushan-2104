@@ -1,4 +1,14 @@
 
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=1400&color=38BDF8&center=true&vCenter=true&width=680&lines=Building+where+creativity%2C+tech+and+AI+meet;B.Tech+CSE+%40+IIIT+Bhubaneswar+%C2%B7+2025%E2%80%9329;Client+sites+with+React+%2B+Three.js;Exploring+AI%2C+motion+design+and+startups" alt="Typing intro" />
+</p>
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/sroushan2104/"><img src="https://img.shields.io/badge/LinkedIn-sroushan2104-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="mailto:sroushan2104@gmail.com"><img src="https://img.shields.io/badge/Email-sroushan2104%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+  <img src="https://komarev.com/ghpvc/?username=Roushan-2104&style=for-the-badge&color=38bdf8&label=PROFILE+VIEWS" alt="Profile views" />
+</p>
+
 ## About me
 
 **I love creating.** My favourite part is taking an idea that only exists in my head and making it real, whether that's a website for a client, a start-up idea or an experiment with AI.
