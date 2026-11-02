@@ -31,9 +31,6 @@ I learn best by building. If you're working on something interesting or a little
 | **Backend** | <img src="https://skillicons.dev/icons?i=firebase,django" alt="Firebase, Django" /> |
 | **Tools** | <img src="https://skillicons.dev/icons?i=git,github,vscode,vercel" alt="Git, GitHub, VS Code, Vercel" /> |
 
-<p align="center">
-  <img src="https://www.gitskins.com/api/section/stats?username=Roushan-2104&theme=neon" alt="GitHub stats" width="100%" />
-</p>
 
 ## Recent projects
 
