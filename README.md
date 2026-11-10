@@ -14,18 +14,10 @@
   <img src="cards/building-light.svg" alt="What I'm building right now: my latest commit" width="100%" />
 </picture>
 
-## About me
-
-**I love creating.** My favourite part is taking an idea that only exists in my head and making it real, whether that's a website for a client, a start-up idea or an experiment with AI.
-
-I'm studying Computer Science at **IIIT Bhubaneswar** (2025–29), and I work where technology, creativity and AI meet. I'm into:
-
-- 🧩 Building products that solve real problems
-- 🤖 AI and new tech, put to practical use
-- 🎨 Creative development and motion design
-- 🚀 Startups, and taking ideas from zero to launch
-
-I learn best by building. If you're working on something interesting or a little out of the box, let's connect.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="cards/about-dark.svg" />
+  <img src="cards/about-light.svg" alt="About me. I love creating. I take ideas that only exist in my head and make them real: client websites, start-up ideas and experiments with AI. I learn best by building. Got something a little out of the box? Let's talk. Into: useful products, practical AI, creative dev and motion, startups from 0 to 1." width="100%" />
+</picture>
 
 <p align="center">
 <picture><source media="(prefers-color-scheme: dark)" srcset="cards/stack-dark.svg" /><img src="cards/stack-light.svg" alt="Tech stack. Languages: C, C++, C#, Python, JavaScript, TypeScript, Dart, HTML, CSS. Frontend: React, Next.js, Vite, Three.js, Tailwind, Bootstrap. Backend: Firebase, Django. Tools: Git, GitHub, VS Code, Vercel." width="61.3%" /></picture>

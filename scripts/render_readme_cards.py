@@ -57,6 +57,22 @@ TILES = [
 
 FEATURED = {"Shammy-Notch-For-Windows": "Shammy Notch for Windows"}
 
+ABOUT = {
+    "lead": "I love ",
+    "lead_accent": "creating.",
+    "lines": [
+        "I take ideas that only exist in my head and make them real:",
+        "client websites, start-up ideas and experiments with AI.",
+        "I learn best by building. Got something a little out of the box? Let's talk.",
+    ],
+    "chips": [
+        ("green", "Useful products"),
+        ("orange", "Practical AI"),
+        ("pink", "Creative dev & motion"),
+        ("ink", "Startups, 0 → 1"),
+    ],
+}
+
 TECH = [
     ("LANGUAGES", "green", ["C", "C++", "C#", "Python", "JavaScript", "TypeScript", "Dart", "HTML", "CSS"]),
     ("FRONTEND", "orange", ["React", "Next.js", "Vite", "Three.js", "Tailwind", "Bootstrap"]),
@@ -470,6 +486,40 @@ def repo_card(t, repo, pretty):
     return svg(W, H, body, ["G7", "G4", "M5"], title)
 
 
+# ------------------------------------------------------------------ about ---
+def about_card(t):
+    W, H = 880, 304
+    lines = "".join(
+        f'<text x="40" y="{150 + i * 27}" class="G4 a" font-size="18" fill="{t["muted"]}" '
+        f'{anim("rise", 0.45 + i * 0.1, 0.7)}>{escape(l)}</text>'
+        for i, l in enumerate(ABOUT["lines"])
+    )
+    chips, x = [], 40
+    for k, (accent, label) in enumerate(ABOUT["chips"]):
+        w = len(label) * 7.7 + 40
+        chips.append(
+            f'<g class="fb a" {anim("pop", 0.9 + k * 0.12, 0.5)}>'
+            f'<rect x="{x:.1f}" y="244" width="{w:.1f}" height="34" rx="17" fill="{t["empty"]}"/>'
+            f'<circle cx="{x + 18:.1f}" cy="261" r="5" fill="{t[accent]}"/>'
+            f'<text x="{x + 30:.1f}" y="266" class="G4" font-size="14" fill="{t["ink"]}">{escape(label)}</text></g>'
+        )
+        x += w + 10
+    body = (
+        card_bg(W, H, t)
+        + f'<text x="40" y="48" class="M5 a" font-size="12" letter-spacing="1.5" fill="{t["muted"]}" '
+          f'{anim("fade", 0.2, 0.6)}>ABOUT ME</text>'
+        + f'<text x="38" y="106" class="G7 a" font-size="46" letter-spacing="-1.5" fill="{t["ink"]}" '
+          f'{anim("rise", 0.3, 0.8)}>{escape(ABOUT["lead"])}<tspan fill="{t["pink"]}">'
+          f'{escape(ABOUT["lead_accent"])}</tspan></text>'
+        + lines
+        + f'<line x1="40" y1="224.5" x2="840" y2="224.5" stroke="{t["line"]}"/>'
+        + "".join(chips)
+    )
+    title = (f'About me. {ABOUT["lead"]}{ABOUT["lead_accent"]} ' + " ".join(ABOUT["lines"])
+             + " Into: " + ", ".join(c for _, c in ABOUT["chips"]) + ".")
+    return svg(W, H, body, ["G7", "G4", "M5"], title)
+
+
 # ----------------------------------------------------------- now building ---
 def building_card(t, b):
     W, H = 880, 96
@@ -688,6 +738,7 @@ def main():
             cards[f"link-{spec['key']}"] = link_pill(t, spec, i)
         if building:
             cards["building"] = building_card(t, building)
+        cards["about"] = about_card(t)
         cards["stack"] = tech_card(t, stack_h, placed)
         cards["languages"] = ring_card(t, stack_h, langs)
         cards["journey"] = journey_card(t)

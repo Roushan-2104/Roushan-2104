@@ -7,8 +7,10 @@ Writes data/portrait-light.txt (ink on paper: dark areas get dense characters)
 and data/portrait-dark.txt (light ink on dark: bright areas get dense characters).
 Needs Pillow:  pip install pillow
 
-The cut-out settings below are tuned for the 400x400 lakeside photo (orange
-T-shirt, sky, green hills and water behind). A different photo needs new values.
+The outline below is traced by hand for the 400x400 cafe photo (beige T-shirt,
+warm wooden background). The background is the same colour family as skin and
+shirt, so a traced outline cuts it out more cleanly than colour rules.
+A different photo needs a new outline and crop.
 """
 import sys
 from pathlib import Path
@@ -19,36 +21,21 @@ ROOT = Path(__file__).resolve().parent.parent
 COLS, ROWS = 96, 48           # character cells are about twice as tall as wide
 RAMP = " .:-=+*#%@"           # light -> dense
 
-HEAD = (150, 116, 246, 240)   # ellipse around head and hair, in photo pixels
-HORIZON = 205                 # sky above this line, hills and water below
-CROP = (45, 110, 335, 400)    # square around the person, in photo pixels
+# Outline of head, neck and shoulders, in photo pixels, clockwise from the left temple.
+OUTLINE = [
+    (146, 165), (144, 140), (152, 118), (170, 104), (195, 97), (220, 99), (240, 110),
+    (251, 128), (253, 150), (250, 172), (248, 195), (243, 212), (236, 228), (240, 246),
+    (262, 254), (290, 264), (318, 276), (338, 295), (352, 320), (364, 350), (372, 380),
+    (378, 400), (95, 400), (97, 360), (100, 325), (105, 300), (115, 282), (135, 268),
+    (158, 258), (176, 250), (178, 238), (168, 226), (160, 212), (152, 200), (148, 185),
+]
+CROP = (82, 96, 382, 396)     # square around the person, in photo pixels
 
 
 def subject_mask(img: Image.Image) -> Image.Image:
-    """Keep the person: warm skin and shirt colours below the horizon, plus the
-    head ellipse minus sky and green hills."""
-    h, s, v = (band.load() for band in img.convert("HSV").split())
-    head = Image.new("L", img.size, 0)
-    ImageDraw.Draw(head).ellipse(HEAD, fill=255)
-    hd = head.load()
     mask = Image.new("L", img.size, 0)
-    px = mask.load()
-    for y in range(img.height):
-        for x in range(img.width):
-            hh, ss, vv = h[x, y], s[x, y], v[x, y]
-            green = 60 <= hh <= 140 and ss > 40
-            if hd[x, y]:
-                sky = y < HORIZON and vv > 140 and ss < 90
-                keep = not green and not sky
-            else:
-                warm = (hh <= 32 or hh >= 225) and ss >= 70 and vv >= 15
-                dark = vv < 30 and not 60 <= hh <= 140
-                keep = y >= HORIZON and (warm or dark)
-            if keep:
-                px[x, y] = 255
-    # Drop specks, then close small holes.
-    mask = mask.filter(ImageFilter.MinFilter(3)).filter(ImageFilter.MaxFilter(3))
-    return mask.filter(ImageFilter.MaxFilter(7)).filter(ImageFilter.MinFilter(7))
+    ImageDraw.Draw(mask).polygon(OUTLINE, fill=255)
+    return mask.filter(ImageFilter.GaussianBlur(1.5))
 
 
 def despeckle(lines, y):
