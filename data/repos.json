@@ -1,0 +1,16 @@
+{
+ "Shammy-Notch-For-Windows": {
+  "name": "Shammy-Notch-For-Windows",
+  "description": "A Dynamic Island for Windows: a live notch with Circle to Search (Google AI Mode, Web, Lens), offline voice commands, music, timers, notifications, file shelf and phone transfer. No paid AI.",
+  "url": "https://github.com/Roushan-2104/Shammy-Notch-For-Windows",
+  "homepage": "",
+  "stars": 1,
+  "forks": 0,
+  "pushed": "2026-11-06T15:15:46Z",
+  "language": "C#",
+  "language_color": "#7355dd",
+  "releases": 16,
+  "latest": "v0.5.7",
+  "commits": 151
+ }
+}
