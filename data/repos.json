@@ -6,11 +6,11 @@
   "homepage": "",
   "stars": 1,
   "forks": 0,
-  "pushed": "2026-11-11T06:39:44Z",
+  "pushed": "2026-11-11T20:02:54Z",
   "language": "C#",
   "language_color": "#7355dd",
-  "releases": 18,
-  "latest": "v0.6.1",
-  "commits": 177
+  "releases": 22,
+  "latest": "v0.8.0",
+  "commits": 197
  }
 }
