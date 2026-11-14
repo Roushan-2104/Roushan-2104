@@ -1,16 +1,16 @@
 {
  "Shammy-Notch-For-Windows": {
   "name": "Shammy-Notch-For-Windows",
-  "description": "A Dynamic Island for Windows: a live notch with Circle to Search (Google AI Mode, Web, Lens), offline voice commands, music, timers, notifications, file shelf and phone transfer. No paid AI.",
+  "description": "A floating island for Windows: a Dynamic Island-style notch with soft liquid light, a dial that blooms under your pointer, Stage (your script under the camera), music, calls, timers, one-time codes and laptop controls. About 90 MB idle. No paid AI.",
   "url": "https://github.com/Roushan-2104/Shammy-Notch-For-Windows",
   "homepage": "",
   "stars": 1,
   "forks": 0,
-  "pushed": "2026-11-12T18:22:00Z",
+  "pushed": "2026-11-13T20:13:52Z",
   "language": "C#",
   "language_color": "#7355dd",
-  "releases": 23,
-  "latest": "v0.9.0",
-  "commits": 231
+  "releases": 24,
+  "latest": "v1.0.0",
+  "commits": 270
  }
 }
