@@ -1,16 +1,16 @@
 {
  "Shammy-Notch-For-Windows": {
   "name": "Shammy-Notch-For-Windows",
-  "description": "A floating island for Windows: a Dynamic Island-style notch with soft liquid light, a dial that blooms under your pointer, Stage (your script under the camera), music, calls, timers, one-time codes and laptop controls. About 90 MB idle. No paid AI.",
+  "description": "A floating island for Windows 10 and 11: approve Claude Code from the top of your screen, talk in Hinglish and it types, circle anything to search, and link your Android phone. About 90 MB idle, no paid AI.",
   "url": "https://github.com/Roushan-2104/Shammy-Notch-For-Windows",
-  "homepage": "",
+  "homepage": "https://roushan-2104.github.io/Shammy-Notch-For-Windows/",
   "stars": 1,
   "forks": 0,
-  "pushed": "2026-11-15T21:14:50Z",
+  "pushed": "2026-11-16T21:13:13Z",
   "language": "C#",
   "language_color": "#7355dd",
   "releases": 32,
   "latest": "v1.5.0",
-  "commits": 405
+  "commits": 414
  }
 }
